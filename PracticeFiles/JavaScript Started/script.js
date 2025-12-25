@@ -55,8 +55,42 @@
 // console.log(countVow("HelloieoWorld"));
 
 
-function randNumGenerator(st, en){
-    let num = Math.floor(Math.random()*(en-st))+st;
-    console.log(num);
+// function randNumGenerator(st, en){
+//     let num = Math.floor(Math.random()*(en-st))+st;
+//     console.log(num);
+// }
+
+// let arrAvg = (arr) =>{
+//     let sum = 0;
+//     for( n of arr){
+//         sum+=n;
+//     }
+//     return sum/(arr.length);
+// };
+
+// console.log(arrAvg([2,3,4,5,6,2,2,0]));
+
+// let isEven = n =>(n%2==0);
+
+const object = {
+    message : 'Hello World',
+    logMessage(){
+        console.log(this.message);
+    }
 }
 
+setTimeout(object.logMessage,1000);
+
+// let length = 4;
+// function callback(){
+//     console.log(this.length);
+// }
+
+// const object = {
+//     length : 5,
+//     method(callback){
+//         callback();
+//     },
+// };
+
+// object.method(callback,1,2);
