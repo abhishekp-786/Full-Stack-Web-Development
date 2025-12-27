@@ -72,14 +72,14 @@
 
 // let isEven = n =>(n%2==0);
 
-const object = {
-    message : 'Hello World',
-    logMessage(){
-        console.log(this.message);
-    }
-}
+// const object = {
+//     message : 'Hello World',
+//     logMessage(){
+//         console.log(this.message);
+//     }
+// }
 
-setTimeout(object.logMessage,1000);
+// setTimeout(object.logMessage,1000);
 
 // let length = 4;
 // function callback(){
@@ -94,3 +94,35 @@ setTimeout(object.logMessage,1000);
 // };
 
 // object.method(callback,1,2);
+
+let arr = [4,2,4,6,7,8,42,4,6,6];
+
+// let sq = arr.map((num)=>num*num);
+
+// let sum = sq.reduce((sum,el)=>sum+el,0);
+// console.log(sum/arr.length);
+
+// let newArr = arr.map((ele)=>ele+5);
+
+// let arr = ['Hello','World'];
+
+// let newA = arr.map((ele)=>ele.toUpperCase());
+// console.log(newA);
+
+// const fnc = (arr11, ...args)=>[
+//     ...arr11,...args.map((ele)=>ele*2)
+// ];
+
+// console.log(arr,5,3,5,6,7,78,7,3,2,7,5,);
+
+const obj1 = {
+    'name':'Abhishek',
+    'section':'K23MK'
+}
+const obj2 = {
+    'marks':8.63,
+    'Roll No.':54
+}
+
+const obj  = ({obj1,obj2})=>({...obj1, ...obj2});
+obj(obj1,obj2);
